@@ -1,0 +1,520 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    
+
+    
+
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+    .wrapper{
+        a{
+            text-decoration: none;
+        }
+    }
+}
+@mixin rff {
+  font-family: 'Raleway',sans-serif;
+}
+$primary-color:rgba(84, 231, 10, 0.961);
+$primary-color2:green;
+$white:#fff;
+@mixin sec-title {
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 50px;;
+    color: #212a42;
+    @include rff();
+    
+}
+header{
+    position: fixed;
+    background: #6dc22c1f;
+    transition: all 0.5s;
+    width: 100%;
+    z-index: 997;
+    border-bottom: 1px solid $white;
+    img{
+        width: 80px;
+        margin-left: 39px;
+        border-radius: 50%;
+    }
+    .navbar{
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            li{
+                  a{
+                     display: flex;
+                     align-items: center;
+                     justify-content: space-between;
+                     font-size: 1.5rem;
+                     font-weight: 500;
+                     color: black;
+                     white-space: nowrap;
+                     padding: 13px 75px 10px 30px;
+                     transition: all 0.3s ease 0s;
+                     margin-top: 17px;
+                     @include rff();
+                     &.active{
+                         color: $primary-color;
+                       }
+                       &:hover{
+                          color: $primary-color2;
+                       }
+                   } 
+                  
+            }
+           
+            
+        }
+        .start-shopping-btn{
+            background-color: $primary-color;
+            color:$white;
+            border-radius: 5px;
+            padding: 11px 20px;
+            white-space: nowrap;
+            transition: 0.3s;
+            font-size: 1.4rem;
+            display: inline-block;
+            
+            &:hover{
+                background: $primary-color2;
+                color:$white;
+            }
+        
+        
+        }
+       
+    }
+    .show-hide{
+        font-size: 4.5rem;
+        display: none;
+        cursor: pointer;
+    
+       &.i.active::before{
+        content: "/f00d";
+       }
+    }
+       
+
+
+}
+
+
+#home{
+    background: url("../images/homebg.jpg") top center;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+    h1{
+        color: $primary-color2;
+        @include rff();
+        font-size: 6.4rem;
+        font-weight: 600;
+    }
+    h2{
+        @include rff(); 
+        font-size: 5.5rem;
+        font-weight: 500; 
+    }
+    p{
+        font-style: 'roboto', sans-serif;
+        font-size: 2rem;
+        margin-left: 5px;
+    }
+    .shop-now-btn{
+        background-color: $primary-color;
+        color:$white;
+        border-radius: 5px;
+        padding: 13px 54px;
+        white-space: nowrap;
+        transition: 0.3s;
+        font-size: 1.4rem;
+        display: inline-block;
+        margin-left: 5px;
+        margin-top: 10px;
+        &:hover{
+            background: $primary-color2;
+            color:$white;
+        }
+    
+    
+    }
+
+}
+#tropical{
+    background: url("../images/greenbg.webp") top center;
+    background-size: cover;
+   padding: 100px 0px;
+    background-color: #5687561f;
+    .about-tropical{
+        background-color: #322b2b05;
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        h3{
+            padding-top: 8px;
+            text-align: center;
+            @include rff();
+            font-size: 3rem;
+        }
+        p{
+            font-style: 'roboto', sans-serif;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .learn-more-btn{
+            background-color: $primary-color;
+            color:$white;
+            border-radius: 5px;
+            padding: 10px 41px;
+            white-space: nowrap;
+            font-size: 1.4rem;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            display: block;
+            &:hover{
+                background:$primary-color2;
+                color: $white;
+                
+                
+            }
+        }
+        &:hover{
+             transform: scale(1.08);
+             box-shadow: 5px 5px 5px rgba(28, 175, 48, 0.18);
+             border-radius: 5PX;
+            
+        } 
+
+        
+    }
+    .about-tropical:hover .learn-more-btn{
+        opacity: 1;  }
+   
+
+}
+#fruit-tree{
+    background-color: floralwhite;
+    .heading-fruit-tree{
+        margin-bottom: 50px;
+        h1{
+            @include sec-title();
+        }
+        font-size: 1.8rem;
+    }
+    
+    .egg-fruit-box{
+        box-sizing: content-box;
+        position: relative;
+        margin-bottom: 50px;
+        overflow: hidden;
+        width: 360px;
+        min-height: 360PX;
+        padding: 5px  4px 6px 4px;
+        background-color:#eee;
+        margin-right:4px;
+        .fruit-img{
+      
+            img{
+                width: 100%;
+                transition: all ease-in-out 0.4s;
+            }
+            
+        }
+     .details-egg-fruit{
+         position: relative;
+         
+        h3{
+        
+            @include rff();
+            font-size: 1.8rem;
+            margin-left: 20px;
+        }
+        h4{
+            
+            font-weight: 100;
+            font-size: 1.5rem;
+            @include rff();
+            margin-left: 20px;
+        }
+        h5{
+            
+            font-size: 1.2rem;
+            font-weight: 500;
+            @include rff();
+            margin-left: 20px;
+            span{
+                font-size: 1.8rem;
+            }
+        }
+        p{
+            position: absolute;
+            right: 15px;
+            margin-top: -24px;
+            font-size: 1.5rem;
+            span{
+                :hover{
+                    color: #3ac162;
+                }
+            }
+        }
+    }
+     .details-btn{
+         opacity: 0;
+         text-align: center;
+
+         a{
+             display: inline-block;
+         }
+
+
+        .by-now{
+            background-color: $primary-color2;
+            color:$white;
+            border-radius: 5px;
+            padding: 10px 47px;
+            white-space: nowrap;
+            transition: 0.5s;
+            font-size: 1.4rem;
+            
+            &:hover{
+                background:$primary-color2;
+                color:$white;
+            }
+
+        }
+        
+        .learn-more{
+            background-color:rgba(212, 201, 179, 0.897);
+            color:$white;
+            border-radius: 5px;
+            padding: 10px 41px;
+            white-space: nowrap;
+            transition: 0.3s;
+            font-size: 1.4rem;
+            &:hover{
+                background:$primary-color2;
+                color:$white;
+            }
+        }
+     }
+        &:hover{
+            transform: scale(1.01);
+            border-radius: 5px;
+            background-color: #fff;
+        }
+      
+    }
+    .egg-fruit-box:hover .details-btn{
+        opacity: 1;
+    }
+    
+
+}
+
+.testimonial{
+    background:url("../images/green-leaf-border.jpg") top center;
+    background-size: cover;
+    padding: 100px 0px;
+    h1{
+        @include sec-title();
+    }
+    p{
+        font-size: 1.8rem;
+    }
+    .testimonial-item{
+        box-sizing: content-box;
+        height: 325px;
+        padding: 9px 0px;
+        text-align: center;
+        i{
+            border-radius: 50px;
+            font-size: 2.5rem;
+            padding: 8px 8px;
+            color: #fff;
+            background-color: #212a42;
+            &:hover{
+                background: $primary-color2;
+            }
+
+        }
+        p{
+            font-size: 1.5rem;
+            font-style: 'roboto', sans-serif;
+            line-height: 21px;
+            padding: 13px 3px 10px 24px;
+            margin: 5px 0px 5px 0px;
+        
+        }
+        img{
+            max-width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: inline-block;
+        
+            
+    }
+        
+        h5{
+            @include rff();
+        }
+        h6{
+            @include rff();
+    
+            
+        }
+        &:hover{
+            transform: scale(.9);
+            background-color: whitesmoke;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px rgba(28, 175, 48, 0.18);
+        }
+    }
+ 
+
+    
+}
+.collection{
+    padding: 100px 0px;
+    background: url("../images/green-leaf-border.jpg") top center;
+    background-size: cover;
+    .heading-contect{
+        h1{
+            font-size: 4.5rem;
+            @include rff();
+        }
+        p{
+            font-size: 1.5rem;
+            font-style: 'roboto', sans-serif;
+            font-weight: 500;
+
+        }
+    
+        .shopping-btn{
+                background-color: $primary-color;
+                color:$white;
+                border-radius: 5px;
+                padding: 6px 35px;
+                white-space: nowrap;
+                transition: 0.3s;
+                font-size: 1.4rem;
+                border: 0;
+                display: inline-block;
+                &:hover{
+                    background-color: $primary-color2;
+                    color:$white;
+                }
+        }
+    }
+    .details{
+        margin-top:120px;
+        img{
+            display: inline-block;
+            text-align: center;
+            margin-left: 39px;
+            border-radius: 50px;
+        }
+        .icon{
+            display: inline-block;
+            text-align: center;
+            margin-top: 12px;
+            a{
+                background:$white;
+                padding: 9px 11px;
+                margin: 4px;
+                border-radius: 50%;
+                font-size: 18px;
+
+                &:hover{
+                    background:$primary-color2;
+                    color: $white;
+
+                }
+                &.active{
+                    background: $primary-color;
+                    color: $white;
+                }
+
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+    html{
+        font-size: 58%;
+    }
+    
+}
+@media  screen and (max-width:992px) {
+   header .start-shopping-btn{
+        display: none !important;
+    }
+    
+}
+@media screen and (max-width:800px) {
+   html{
+        font-size: 50%;
+   }
+    #tropical{
+        text-align: center;
+    }
+     .show-hide{
+        display: block !important;
+        z-index: 999;
+    }
+     .navbar .nav-menu{
+        position: fixed;
+        height: 100vh;
+        background: #fff;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding-top: 100px;
+        transition: all 0.3s ease;
+        display:block ;
+        z-index: 999;
+        
+    }
+    .navbar .nav-menu.active{
+        left: 0;
+    }
+    .navbar .nav-menu li{
+        display: block;
+        
+    }
+    .navbar .nav-menu li a{
+        display: inline-block;
+        margin: 20px 0px;
+        font-size: 25px;
+    }
+    
+
+}
+
+    
+
+    
+    

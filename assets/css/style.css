@@ -1,0 +1,434 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body .wrapper a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  background: rgba(109, 194, 44, 0.1215686275);
+  transition: all 0.5s;
+  width: 100%;
+  z-index: 997;
+  border-bottom: 1px solid #fff;
+}
+header img {
+  width: 80px;
+  margin-left: 39px;
+  border-radius: 50%;
+}
+header .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .navbar ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+  white-space: nowrap;
+  padding: 13px 75px 10px 30px;
+  transition: all 0.3s ease 0s;
+  margin-top: 17px;
+  font-family: "Raleway", sans-serif;
+}
+header .navbar ul li a.active {
+  color: rgba(84, 231, 10, 0.961);
+}
+header .navbar ul li a:hover {
+  color: green;
+}
+header .navbar .start-shopping-btn {
+  background-color: rgba(84, 231, 10, 0.961);
+  color: #fff;
+  border-radius: 5px;
+  padding: 11px 20px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 1.4rem;
+  display: inline-block;
+}
+header .navbar .start-shopping-btn:hover {
+  background: green;
+  color: #fff;
+}
+header .show-hide {
+  font-size: 4.5rem;
+  display: none;
+  cursor: pointer;
+}
+header .show-hide.i.active::before {
+  content: "/f00d";
+}
+
+#home {
+  background: url("../images/homebg.jpg") top center;
+  background-size: cover;
+  height: 100vh;
+  max-width: 100%;
+}
+#home h1 {
+  color: green;
+  font-family: "Raleway", sans-serif;
+  font-size: 6.4rem;
+  font-weight: 600;
+}
+#home h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 5.5rem;
+  font-weight: 500;
+}
+#home p {
+  font-style: "roboto", sans-serif;
+  font-size: 2rem;
+  margin-left: 5px;
+}
+#home .shop-now-btn {
+  background-color: rgba(84, 231, 10, 0.961);
+  color: #fff;
+  border-radius: 5px;
+  padding: 13px 54px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 1.4rem;
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+#home .shop-now-btn:hover {
+  background: green;
+  color: #fff;
+}
+
+#tropical {
+  background: url("../images/greenbg.webp") top center;
+  background-size: cover;
+  padding: 100px 0px;
+  background-color: rgba(86, 135, 86, 0.1215686275);
+}
+#tropical .about-tropical {
+  background-color: rgba(50, 43, 43, 0.0196078431);
+}
+#tropical .about-tropical img {
+  max-width: 100%;
+  height: auto;
+}
+#tropical .about-tropical h3 {
+  padding-top: 8px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+}
+#tropical .about-tropical p {
+  font-style: "roboto", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+}
+#tropical .about-tropical .learn-more-btn {
+  background-color: rgba(84, 231, 10, 0.961);
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 41px;
+  white-space: nowrap;
+  font-size: 1.4rem;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  display: block;
+}
+#tropical .about-tropical .learn-more-btn:hover {
+  background: green;
+  color: #fff;
+}
+#tropical .about-tropical:hover {
+  transform: scale(1.08);
+  box-shadow: 5px 5px 5px rgba(28, 175, 48, 0.18);
+  border-radius: 5PX;
+}
+#tropical .about-tropical:hover .learn-more-btn {
+  opacity: 1;
+}
+
+#fruit-tree {
+  background-color: floralwhite;
+}
+#fruit-tree .heading-fruit-tree {
+  margin-bottom: 50px;
+  font-size: 1.8rem;
+}
+#fruit-tree .heading-fruit-tree h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 50px;
+  color: #212a42;
+  font-family: "Raleway", sans-serif;
+}
+#fruit-tree .egg-fruit-box {
+  box-sizing: content-box;
+  position: relative;
+  margin-bottom: 50px;
+  overflow: hidden;
+  width: 360px;
+  min-height: 360PX;
+  padding: 5px 4px 6px 4px;
+  background-color: #eee;
+  margin-right: 4px;
+}
+#fruit-tree .egg-fruit-box .fruit-img img {
+  width: 100%;
+  transition: all ease-in-out 0.4s;
+}
+#fruit-tree .egg-fruit-box .details-egg-fruit {
+  position: relative;
+}
+#fruit-tree .egg-fruit-box .details-egg-fruit h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8rem;
+  margin-left: 20px;
+}
+#fruit-tree .egg-fruit-box .details-egg-fruit h4 {
+  font-weight: 100;
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+  margin-left: 20px;
+}
+#fruit-tree .egg-fruit-box .details-egg-fruit h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  margin-left: 20px;
+}
+#fruit-tree .egg-fruit-box .details-egg-fruit h5 span {
+  font-size: 1.8rem;
+}
+#fruit-tree .egg-fruit-box .details-egg-fruit p {
+  position: absolute;
+  right: 15px;
+  margin-top: -24px;
+  font-size: 1.5rem;
+}
+#fruit-tree .egg-fruit-box .details-egg-fruit p span :hover {
+  color: #3ac162;
+}
+#fruit-tree .egg-fruit-box .details-btn {
+  opacity: 0;
+  text-align: center;
+}
+#fruit-tree .egg-fruit-box .details-btn a {
+  display: inline-block;
+}
+#fruit-tree .egg-fruit-box .details-btn .by-now {
+  background-color: green;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 47px;
+  white-space: nowrap;
+  transition: 0.5s;
+  font-size: 1.4rem;
+}
+#fruit-tree .egg-fruit-box .details-btn .by-now:hover {
+  background: green;
+  color: #fff;
+}
+#fruit-tree .egg-fruit-box .details-btn .learn-more {
+  background-color: rgba(212, 201, 179, 0.897);
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 41px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 1.4rem;
+}
+#fruit-tree .egg-fruit-box .details-btn .learn-more:hover {
+  background: green;
+  color: #fff;
+}
+#fruit-tree .egg-fruit-box:hover {
+  transform: scale(1.01);
+  border-radius: 5px;
+  background-color: #fff;
+}
+#fruit-tree .egg-fruit-box:hover .details-btn {
+  opacity: 1;
+}
+
+.testimonial {
+  background: url("../images/green-leaf-border.jpg") top center;
+  background-size: cover;
+  padding: 100px 0px;
+}
+.testimonial h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 50px;
+  color: #212a42;
+  font-family: "Raleway", sans-serif;
+}
+.testimonial p {
+  font-size: 1.8rem;
+}
+.testimonial .testimonial-item {
+  box-sizing: content-box;
+  height: 325px;
+  padding: 9px 0px;
+  text-align: center;
+}
+.testimonial .testimonial-item i {
+  border-radius: 50px;
+  font-size: 2.5rem;
+  padding: 8px 8px;
+  color: #fff;
+  background-color: #212a42;
+}
+.testimonial .testimonial-item i:hover {
+  background: green;
+}
+.testimonial .testimonial-item p {
+  font-size: 1.5rem;
+  font-style: "roboto", sans-serif;
+  line-height: 21px;
+  padding: 13px 3px 10px 24px;
+  margin: 5px 0px 5px 0px;
+}
+.testimonial .testimonial-item img {
+  max-width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.testimonial .testimonial-item h5 {
+  font-family: "Raleway", sans-serif;
+}
+.testimonial .testimonial-item h6 {
+  font-family: "Raleway", sans-serif;
+}
+.testimonial .testimonial-item:hover {
+  transform: scale(0.9);
+  background-color: whitesmoke;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgba(28, 175, 48, 0.18);
+}
+
+.collection {
+  padding: 100px 0px;
+  background: url("../images/green-leaf-border.jpg") top center;
+  background-size: cover;
+}
+.collection .heading-contect h1 {
+  font-size: 4.5rem;
+  font-family: "Raleway", sans-serif;
+}
+.collection .heading-contect p {
+  font-size: 1.5rem;
+  font-style: "roboto", sans-serif;
+  font-weight: 500;
+}
+.collection .heading-contect .shopping-btn {
+  background-color: rgba(84, 231, 10, 0.961);
+  color: #fff;
+  border-radius: 5px;
+  padding: 6px 35px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 1.4rem;
+  border: 0;
+  display: inline-block;
+}
+.collection .heading-contect .shopping-btn:hover {
+  background-color: green;
+  color: #fff;
+}
+.collection .details {
+  margin-top: 120px;
+}
+.collection .details img {
+  display: inline-block;
+  text-align: center;
+  margin-left: 39px;
+  border-radius: 50px;
+}
+.collection .details .icon {
+  display: inline-block;
+  text-align: center;
+  margin-top: 12px;
+}
+.collection .details .icon a {
+  background: #fff;
+  padding: 9px 11px;
+  margin: 4px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+.collection .details .icon a:hover {
+  background: green;
+  color: #fff;
+}
+.collection .details .icon a.active {
+  background: rgba(84, 231, 10, 0.961);
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 58%;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .start-shopping-btn {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+  #tropical {
+    text-align: center;
+  }
+  .show-hide {
+    display: block !important;
+    z-index: 999;
+  }
+  .navbar .nav-menu {
+    position: fixed;
+    height: 100vh;
+    background: #fff;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    text-align: center;
+    padding-top: 100px;
+    transition: all 0.3s ease;
+    display: block;
+    z-index: 999;
+  }
+  .navbar .nav-menu.active {
+    left: 0;
+  }
+  .navbar .nav-menu li {
+    display: block;
+  }
+  .navbar .nav-menu li a {
+    display: inline-block;
+    margin: 20px 0px;
+    font-size: 25px;
+  }
+}/*# sourceMappingURL=style.css.map */
