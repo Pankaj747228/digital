@@ -8,7 +8,6 @@
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 html {
@@ -20,8 +19,9 @@ body .wrapper a {
 }
 
 header {
-  position: fixed;
-  background: rgba(109, 194, 44, 0.1215686275);
+  position: -webkit-sticky;
+  position: sticky;
+  background: rgba(119, 208, 51, 0.1215686275);
   transition: all 0.5s;
   width: 100%;
   z-index: 997;
@@ -80,10 +80,11 @@ header .show-hide.i.active::before {
 }
 
 #home {
-  background: url("../images/homebg.jpg") top center;
+  background: url("../images/homebg.jpg") no-repeat center;
   background-size: cover;
   height: 100vh;
   max-width: 100%;
+  margin: auto;
 }
 #home h1 {
   color: green;
@@ -398,7 +399,7 @@ header .show-hide.i.active::before {
 }
 @media screen and (max-width: 800px) {
   html {
-    font-size: 50%;
+    font-size: 40%;
   }
   #tropical {
     text-align: center;
